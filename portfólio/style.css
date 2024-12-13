@@ -3,44 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
 }
-body{
-    color: white;
-    background-image: url(./img/back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    height: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vh;
-    font-size: 1vw;
 
-}
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
-}
-a{
-    color: white;
-    text-decoration: underline;
+header a{
+    color: #727272;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
 header img{
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    border: 5px solid skyblue;
-}
-.eu{
-    text-align: center;
-}
-h1{
-    color:skyblue;
-}
-h2{
-    text-decoration: underline;
+    border-radius: 35%;
+    border: 3px solid #2e5090;
 }
 footer{
     width: 100%;
@@ -60,19 +37,37 @@ footer img{
     align-items: center;
     padding: 16px;
     gap: 16px;
-
-}
-.body{
-    padding: 0px 50px;
-}
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;
 }
 /* ESTILO CABEÇALHO */
 .cabecalho{
     padding: 40px 4%;
 }
 header > .interface{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header .contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2e5090;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+header .contato button:hover{
+    box-shadow: 0px 0px 8px #32518a;
 }
